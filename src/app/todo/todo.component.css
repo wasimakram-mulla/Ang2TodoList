@@ -1,0 +1,51 @@
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.todo {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.todo li{
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding:10px;
+    position: relative;  
+}
+
+.todo li.completed:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  background: #000;
+  content: "";
+  width: 100%;
+  display: block;
+}
+
+code.completed{
+  text-decoration: line-through;
+}
+
+.todo li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.todo input[type="checkbox"]{
+    z-index: 123;
+    position: relative;
+}
+
+a.close {
+  float: right;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
